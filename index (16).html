@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Curso de Numerología para Principiantes | Ly Badillo</title>
+<meta name="description" content="Descubre lo que tu fecha de nacimiento revela sobre ti. Curso de Numerología para Principiantes con Ly Badillo: clases por Zoom, manual incluido y acompañamiento paso a paso.">
+<meta name="keywords" content="numerología, curso de numerología, numerología para principiantes, Ly Badillo, numeróloga, terapia energética, autoconocimiento">
+<meta name="author" content="Ly Badillo">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Curso de Numerología para Principiantes | Ly Badillo">
+<meta property="og:description" content="¿Y si la fecha en la que naciste escondiera las respuestas que llevas buscando durante años? Descúbrelo en este curso para principiantes.">
+<meta property="og:image" content="{{FLYER_IMGBB}}">
+<meta property="og:locale" content="es_MX">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Curso de Numerología para Principiantes | Ly Badillo">
+<meta name="twitter:description" content="Descubre tu personalidad, tu misión de vida y tu energía a través de los números.">
+<meta name="twitter:image" content="{{FLYER_IMGBB}}">
+
+<!-- Favicon simple (círculo dorado) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%234A2E6B'/%3E%3Ctext x='50' y='66' font-size='55' text-anchor='middle' fill='%23D4AF7A' font-family='Georgia,serif'%3E7%3C/text%3E%3C/svg%3E">
+
+<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Datos estructurados básicos (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Curso de Numerología para Principiantes",
+  "description": "Curso introductorio de numerología impartido por Ly Badillo, por Zoom, con manual y ejercicios prácticos.",
+  "provider": {
+    "@type": "Person",
+    "name": "Ly Badillo"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "444",
+    "priceCurrency": "MXN"
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   0. RESET & TOKENS DE DISEÑO
+   Paleta: blanco cálido, beige, lavanda, lila, morado profundo, dorado suave
+   Tipografía: Cormorant Garamond (display) + Jost (cuerpo)
+   Firma visual: mandala numerológico giratorio (círculo de números 1–9)
+   ============================================================ */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+
+:root{
+  --white:      #FFFBF6;
+  --beige:      #F1E7D8;
+  --lavender:   #D9CBEF;
+  --lilac:      #9B7EDE;
+  --purple:     #4A2E6B;
+  --purple-deep:#2E1C46;
+  --gold:       #C9A24B;
+  --gold-soft:  #E4C98A;
+  --ink:        #2B1B3D;
+  --ink-soft:   #5B4C74;
+
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: "Jost", "Segoe UI", sans-serif;
+
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 20px 45px -20px rgba(74,46,107,0.35);
+  --shadow-soft-sm: 0 10px 25px -12px rgba(74,46,107,0.28);
+  --max-w: 1120px;
+}
+
+body{
+  font-family: var(--body);
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul{ list-style:none; }
+section{ position:relative; padding: 5rem 1.25rem; }
+.wrap{ max-width: var(--max-w); margin:0 auto; }
+
+h1,h2,h3,h4{ font-family: var(--display); color: var(--purple-deep); font-weight:600; }
+.eyebrow{
+  font-family: var(--body);
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-size: .72rem;
+  color: var(--gold);
+  font-weight:600;
+  display:inline-block;
+  margin-bottom: .9rem;
+}
+.section-title{ font-size: clamp(1.8rem, 4.5vw, 2.6rem); margin-bottom: .6rem; }
+.section-sub{ color: var(--ink-soft); max-width: 620px; font-size:1.02rem; }
+.center{ text-align:center; margin-left:auto; margin-right:auto; }
+
+/* --- Reveal on scroll --- */
+.reveal{ opacity:0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.visible{ opacity:1; transform:none; }
+
+/* --- Botones --- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-family: var(--body);
+  font-weight:600;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  border: none;
+  cursor:pointer;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, background .35s ease;
+}
+.btn-primary{
+  background: linear-gradient(135deg, var(--purple) 0%, var(--purple-deep) 100%);
+  color: var(--gold-soft);
+  box-shadow: var(--shadow-soft-sm);
+}
+.btn-primary:hover{ transform: translateY(-3px); box-shadow: 0 22px 40px -18px rgba(74,46,107,0.55); }
+.btn-gold{
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: var(--purple-deep);
+}
+.btn-gold:hover{ transform: translateY(-3px); box-shadow: 0 18px 34px -16px rgba(201,162,75,0.55); }
+.btn-outline{
+  background: transparent;
+  border: 1.5px solid var(--purple);
+  color: var(--purple);
+}
+.btn-outline:hover{ background: var(--purple); color:#fff; transform: translateY(-2px); }
+.btn-wsp{ background:#25D366; color:#fff; }
+.btn-wsp:hover{ transform: translateY(-3px); box-shadow: 0 18px 34px -16px rgba(37,211,102,0.55); }
+
+/* ============================================================
+   1. TOP BAR (aparece al hacer scroll)
+   ============================================================ */
+.topbar{
+  position: fixed; top:0; left:0; right:0; z-index: 90;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: .9rem 1.25rem;
+  background: rgba(255,251,246,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(74,46,107,0.08);
+  transform: translateY(-110%);
+  transition: transform .5s ease;
+}
+.topbar.show{ transform: translateY(0); }
+.topbar .brand{ font-family: var(--display); font-size:1.15rem; color: var(--purple-deep); font-weight:600; }
+.topbar .brand span{ color: var(--gold); }
+.topbar .btn{ padding: .6rem 1.2rem; font-size:.82rem; }
+
+/* ============================================================
+   2. HERO
+   ============================================================ */
+.hero{
+  padding-top: 5.5rem;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(217,203,239,0.55), transparent 55%),
+    radial-gradient(circle at 90% 20%, rgba(228,201,138,0.35), transparent 45%),
+    linear-gradient(180deg, var(--white) 0%, var(--beige) 100%);
+  overflow:hidden;
+}
+.hero .wrap{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items:center;
+}
+.hero-copy .eyebrow{ background: rgba(155,126,222,0.15); padding:.35rem .9rem; border-radius:999px; }
+.hero h1{
+  font-size: clamp(2.1rem, 6vw, 3.4rem);
+  line-height:1.15;
+  margin-bottom: 1.1rem;
+}
+.hero h1 em{ font-style: italic; color: var(--lilac); }
+.hero p.lead{
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  max-width: 540px;
+  margin-bottom: 1.8rem;
+}
+.hero-ctas{ display:flex; flex-wrap:wrap; gap:1rem; }
+
+/* --- Mandala numerológico (firma visual) --- */
+.mandala-wrap{
+  position:relative;
+  display:flex; align-items:center; justify-content:center;
+  min-height: 320px;
+}
+.mandala{
+  width: min(78vw, 380px);
+  aspect-ratio: 1/1;
+  position:relative;
+  animation: spin 90s linear infinite;
+}
+@keyframes spin{ to{ transform: rotate(360deg); } }
+.mandala .ring{
+  position:absolute; inset:0;
+  border-radius:50%;
+  border: 1px dashed rgba(74,46,107,0.25);
+}
+.mandala .ring.r2{ inset: 12%; border-color: rgba(201,162,75,0.35); }
+.mandala .num{
+  position:absolute;
+  width: 46px; height:46px;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family: var(--display);
+  font-size:1.25rem;
+  font-weight:600;
+  color: var(--purple-deep);
+  background: radial-gradient(circle at 30% 25%, #fff, var(--lavender));
+  box-shadow: var(--shadow-soft-sm);
+  animation: counterspin 90s linear infinite;
+}
+@keyframes counterspin{ to{ transform: rotate(-360deg); } }
+.mandala .core{
+  position:absolute; inset: 34%;
+  border-radius:50%;
+  background: linear-gradient(135deg, var(--purple), var(--purple-deep));
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 0 0 8px rgba(228,201,138,0.25), var(--shadow-soft);
+  animation: counterspin 90s linear infinite;
+}
+.mandala .core span{ font-family: var(--display); font-style:italic; color: var(--gold-soft); font-size: 1.6rem; }
+
+/* --- Marcador de flyer --- */
+.flyer-frame{
+  margin: 3rem auto 0;
+  max-width: 420px;
+  padding: .6rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(217,203,239,0.35));
+  border: 1px solid rgba(201,162,75,0.4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft-sm);
+}
+.flyer-frame img{
+  width:100%;
+  border-radius: calc(var(--radius-md) - 6px);
+  display:block;
+}
+.flyer-frame figcaption{
+  text-align:center;
+  font-size:.75rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color: var(--ink-soft);
+  margin-top:.6rem;
+}
+
+/* ============================================================
+   3. GRID GENERAL DE TARJETAS
+   ============================================================ */
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+  margin-top: 2.6rem;
+}
+@media(min-width:640px){ .grid.cols-2{ grid-template-columns: repeat(2,1fr); } }
+@media(min-width:900px){
+  .grid.cols-3{ grid-template-columns: repeat(3,1fr); }
+  .grid.cols-4{ grid-template-columns: repeat(4,1fr); }
+}
+
+.card{
+  background:#fff;
+  border-radius: var(--radius-md);
+  padding: 1.8rem 1.5rem;
+  box-shadow: var(--shadow-soft-sm);
+  border: 1px solid rgba(74,46,107,0.06);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+.card:hover{ transform: translateY(-6px); box-shadow: var(--shadow-soft); }
+
+.icon-badge{
+  width:52px; height:52px;
+  border-radius:16px;
+  display:flex; align-items:center; justify-content:center;
+  background: linear-gradient(135deg, var(--lavender), #fff);
+  margin-bottom: 1rem;
+}
+.icon-badge svg{ width:26px; height:26px; stroke:var(--purple); fill:none; stroke-width:1.6; }
+
+/* --- Sección alterna con fondo --- */
+.section-alt{ background: linear-gradient(180deg, var(--beige) 0%, var(--white) 100%); }
+.section-deep{
+  background: radial-gradient(circle at 20% 20%, rgba(155,126,222,0.25), transparent 50%), var(--purple-deep);
+  color: #EDE6F7;
+}
+.section-deep h2, .section-deep h3{ color:#fff; }
+.section-deep .section-sub{ color: rgba(237,230,247,0.75); }
+
+/* ============================================================
+   4. ¿PARA QUIÉN ES?
+   ============================================================ */
+.check-card{
+  display:flex; gap:.9rem; align-items:flex-start;
+  background:#fff; border-radius: var(--radius-sm);
+  padding: 1.2rem 1.3rem;
+  box-shadow: var(--shadow-soft-sm);
+}
+.check-card .mark{
+  flex:none; width:28px; height:28px; border-radius:50%;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; font-size:.85rem; font-weight:700;
+}
+
+/* ============================================================
+   5. INSTRUCTORA
+   ============================================================ */
+.instructor{
+  display:grid; grid-template-columns:1fr; gap:2.5rem; align-items:center;
+}
+@media(min-width:860px){ .instructor{ grid-template-columns: 0.85fr 1.15fr; } }
+.instructor-visual{
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 30% 20%, rgba(228,201,138,0.5), transparent 60%),
+    linear-gradient(160deg, var(--purple), var(--purple-deep));
+  position:relative;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: var(--shadow-soft);
+}
+.instructor-visual .initial{
+  font-family: var(--display);
+  font-style:italic;
+  font-size: 6rem;
+  color: rgba(228,201,138,0.9);
+}
+.credentials{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.4rem; }
+.credentials span{
+  font-size:.78rem;
+  letter-spacing:.03em;
+  padding:.45rem .9rem;
+  border-radius:999px;
+  background: rgba(155,126,222,0.14);
+  color: var(--purple-deep);
+  border:1px solid rgba(155,126,222,0.35);
+}
+
+/* ============================================================
+   6. TESTIMONIOS
+   ============================================================ */
+.testi-note{
+  font-size:.82rem;
+  color: var(--ink-soft);
+  background: rgba(201,162,75,0.12);
+  border: 1px dashed rgba(201,162,75,0.5);
+  border-radius: var(--radius-sm);
+  padding: .9rem 1.1rem;
+  margin-top: 1.4rem;
+}
+.testi-card{
+  position:relative;
+  background:#fff;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft-sm);
+}
+.testi-tag{
+  position:absolute; top:-10px; right: 14px;
+  background: var(--gold);
+  color:#fff;
+  font-size:.62rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  padding:.3rem .6rem;
+  border-radius: 999px;
+  font-weight:700;
+}
+.testi-top{ display:flex; align-items:center; gap:.8rem; margin-bottom:.8rem; }
+.avatar{
+  width:44px; height:44px; border-radius:50%;
+  background: linear-gradient(135deg, var(--lavender), var(--lilac));
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  font-family:var(--display); font-weight:600;
+}
+.testi-name{ font-weight:600; font-size:.95rem; color:var(--purple-deep); }
+.testi-meta{ font-size:.78rem; color:var(--ink-soft); }
+.testi-quote{ font-size:.92rem; color: var(--ink-soft); font-style:italic; }
+.stars{ color: var(--gold); font-size:.85rem; margin-top:.6rem; letter-spacing:.1em; }
+
+/* ============================================================
+   7. OFERTA
+   ============================================================ */
+.pricing{
+  max-width: 480px; margin: 2.6rem auto 0;
+  background: linear-gradient(160deg, #fff, var(--lavender) 220%);
+  border-radius: var(--radius-lg);
+  padding: 2.4rem 2rem;
+  text-align:center;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(201,162,75,0.35);
+}
+.pricing .price{
+  font-family: var(--display);
+  font-size: 3.4rem;
+  color: var(--purple-deep);
+  margin: .5rem 0 .2rem;
+}
+.pricing .price sup{ font-size:1.1rem; vertical-align: super; color: var(--gold); }
+.pricing ul{ text-align:left; margin: 1.6rem 0; display:flex; flex-direction:column; gap:.6rem; }
+.pricing ul li{ display:flex; gap:.6rem; align-items:flex-start; font-size:.92rem; color:var(--ink-soft); }
+.pricing ul li::before{ content:"✦"; color: var(--gold); flex:none; }
+.pricing .btn{ width:100%; }
+
+/* ============================================================
+   8. FAQ (acordeón)
+   ============================================================ */
+.faq-item{
+  border-bottom: 1px solid rgba(74,46,107,0.12);
+}
+.faq-q{
+  width:100%;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  background:none; border:none; text-align:left;
+  padding: 1.25rem 0;
+  font-family: var(--body);
+  font-size: 1rem;
+  font-weight:600;
+  color: var(--purple-deep);
+  cursor:pointer;
+}
+.faq-q .plus{
+  flex:none;
+  width:26px; height:26px; border-radius:50%;
+  border:1.5px solid var(--gold);
+  color: var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  transition: transform .35s ease;
+  font-size: 1rem;
+}
+.faq-item.open .faq-q .plus{ transform: rotate(135deg); }
+.faq-a{
+  max-height:0; overflow:hidden;
+  transition: max-height .45s ease, padding .45s ease;
+  color: var(--ink-soft);
+  font-size:.95rem;
+}
+.faq-item.open .faq-a{ padding-bottom: 1.35rem; }
+
+/* ============================================================
+   9. CIERRE EMOCIONAL
+   ============================================================ */
+.closing{
+  text-align:center;
+  padding: 6rem 1.25rem;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(228,201,138,0.25), transparent 60%),
+    linear-gradient(160deg, var(--purple-deep), #1c1130);
+  color: #EFE7FB;
+}
+.closing blockquote{
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  max-width: 760px; margin: 0 auto 1.6rem;
+  line-height:1.35;
+}
+.closing .signature{ color: var(--gold-soft); font-family: var(--body); letter-spacing:.08em; font-size:.85rem; text-transform:uppercase; }
+
+/* ============================================================
+   10. FOOTER
+   ============================================================ */
+footer{
+  background: var(--purple-deep);
+  color: rgba(237,230,247,0.75);
+  padding: 3.2rem 1.25rem 2rem;
+  text-align:center;
+}
+footer .brand{ font-family: var(--display); color:#fff; font-size:1.4rem; margin-bottom:.6rem; }
+footer .roles{ font-size:.85rem; margin-bottom:1.6rem; }
+footer .roles span::after{ content:" · "; color: var(--gold); }
+footer .roles span:last-child::after{ content:""; }
+footer .fine{ font-size:.75rem; opacity:.6; margin-top:1.6rem; }
+
+/* ============================================================
+   11. WHATSAPP FLOTANTE
+   ============================================================ */
+.wsp-float{
+  position: fixed; right: 1.1rem; bottom: 1.1rem; z-index: 95;
+  width:60px; height:60px; border-radius:50%;
+  background:#25D366; color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: 0 12px 28px -8px rgba(37,211,102,0.6);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+.wsp-float svg{ width:30px; height:30px; fill:#fff; }
+@keyframes pulse{
+  0%,100%{ box-shadow: 0 12px 28px -8px rgba(37,211,102,0.6); }
+  50%{ box-shadow: 0 12px 28px -4px rgba(37,211,102,0.85); }
+}
+
+/* ============================================================
+   RESPONSIVE — escritorio
+   ============================================================ */
+@media(min-width:900px){
+  section{ padding: 7rem 2rem; }
+  .hero .wrap{ grid-template-columns: 1.05fr 0.95fr; }
+  .hero-ctas{ margin-bottom:.5rem; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .mandala, .mandala .num, .mandala .core, .wsp-float{ animation: none !important; }
+  .reveal{ transition:none; opacity:1; transform:none; }
+}
+
+/* Foco visible accesible */
+a:focus-visible, button:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+</style>
+</head>
+<body>
+
+<!-- =============== TOP BAR =============== -->
+<div class="topbar" id="topbar">
+  <div class="brand">Ly Badillo <span>· Numerología</span></div>
+  <a href="#oferta" class="btn btn-gold">Reservar Mi Lugar</a>
+</div>
+
+<!-- =============== WHATSAPP FLOTANTE =============== -->
+<a class="wsp-float" href="https://wa.me/522218482898?text=Hola%20Ly%2C%20quiero%20informaci%C3%B3n%20del%20Curso%20de%20Numerolog%C3%ADa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.2-1.77 1.24-.45.05-.9.24-3-.63-2.53-1.05-4.17-3.6-4.3-3.77-.13-.17-1.03-1.37-1.03-2.6 0-1.24.65-1.85.88-2.1.22-.25.5-.31.66-.31.17 0 .33 0 .48.01.15.01.36-.06.56.43.22.53.75 1.83.82 1.96.07.13.11.29.02.46-.09.17-.13.28-.26.43-.13.15-.28.34-.4.46-.13.13-.27.28-.12.55.15.27.68 1.13 1.47 1.83 1.01.9 1.86 1.18 2.13 1.31.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.58.75 1.85.89.27.13.45.2.51.31.07.13.07.71-.15 1.33Z"/></svg>
+</a>
+
+<!-- =============== HERO =============== -->
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Curso para principiantes</span>
+      <h1>¿Y si la fecha en la que <em>naciste</em> escondiera las respuestas que llevas buscando durante años?</h1>
+      <p class="lead">Aprende a leer el lenguaje de los números y descubre tu personalidad, tu misión de vida y tu energía personal, sin conocimientos previos y a tu propio ritmo, guiada por Ly Badillo.</p>
+      <div class="hero-ctas">
+        <a href="#oferta" class="btn btn-primary">Quiero Descubrir Mi Numerología</a>
+        <a href="https://wa.me/522218482898" target="_blank" rel="noopener" class="btn btn-outline">Enviar WhatsApp</a>
+      </div>
+
+      <figure class="flyer-frame">
+        <img src="{{FLYER_IMGBB}}" alt="Flyer del Curso de Numerología para Principiantes">
+        <figcaption>Curso de Numerología para Principiantes</figcaption>
+      </figure>
+    </div>
+
+    <div class="mandala-wrap reveal">
+      <div class="mandala" id="mandala" aria-hidden="true">
+        <div class="ring"></div>
+        <div class="ring r2"></div>
+        <div class="core"><span>Ly</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- =============== QUÉ DESCUBRIRÁS =============== -->
+<section id="descubre">
+  <div class="wrap">
+    <span class="eyebrow center" style="display:block">Un mapa hacia ti misma</span>
+    <h2 class="section-title center">¿Qué descubrirás en el camino?</h2>
+    <p class="section-sub center">Cada número de tu fecha de nacimiento y de tu nombre guarda una parte de tu historia. Esto es lo que aprenderás a leer.</p>
+
+    <div class="grid cols-4">
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div>
+        <h4>Personalidad</h4>
+        <p class="section-sub">La esencia que te hace única, más allá de lo que otros ven.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5L12 2Z"/></svg></div>
+        <h4>Talentos</h4>
+        <p class="section-sub">Dones naturales que quizá ya usas, sin saber de dónde vienen.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 6 3.5 4 7.5C19 16.65 12 21 12 21Z"/></svg></div>
+        <h4>Relaciones</h4>
+        <p class="section-sub">Por qué te llevas bien con unas personas y con otras no tanto.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 4l8 3 8-3-2 14-6 2-6-2L4 4Z"/></svg></div>
+        <h4>Misión de vida</h4>
+        <p class="section-sub">El propósito que tu energía vino a cumplir en esta vida.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 2v20M4 8l8-6 8 6M6 12h12M6 16h12"/></svg></div>
+        <h4>Prosperidad</h4>
+        <p class="section-sub">Tu relación con la abundancia y cómo atraerla con más fluidez.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/></svg></div>
+        <h4>Compatibilidad</h4>
+        <p class="section-sub">La energía que se genera entre tú y las personas importantes en tu vida.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v6c0 5-3.5 7-7 8-3.5-1-7-3-7-8V7l7-4Z"/></svg></div>
+        <h4>Números maestros</h4>
+        <p class="section-sub">Las energías más elevadas de la numerología y lo que significan para ti.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
+        <h4>Energía personal</h4>
+        <p class="section-sub">El ciclo en el que te encuentras hoy y cómo aprovecharlo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== PARA QUIÉN ES =============== -->
+<section class="section-alt" id="para-quien">
+  <div class="wrap">
+    <span class="eyebrow center" style="display:block">¿Es para ti?</span>
+    <h2 class="section-title center">Este curso fue creado para ti si...</h2>
+
+    <div class="grid cols-3">
+      <div class="check-card reveal"><span class="mark">✓</span><p>Nunca has estudiado numerología y quieres empezar desde cero.</p></div>
+      <div class="check-card reveal"><span class="mark">✓</span><p>Quieres conocerte mejor y entender tus propios patrones.</p></div>
+      <div class="check-card reveal"><span class="mark">✓</span><p>Buscas herramientas reales de crecimiento personal.</p></div>
+      <div class="check-card reveal"><span class="mark">✓</span><p>Te interesa la espiritualidad y el autoconocimiento.</p></div>
+      <div class="check-card reveal"><span class="mark">✓</span><p>Deseas contar con herramientas para ayudar a otras personas.</p></div>
+      <div class="check-card reveal"><span class="mark">✓</span><p>Quieres comenzar una nueva actividad profesional con propósito.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== QUÉ INCLUYE =============== -->
+<section id="incluye">
+  <div class="wrap">
+    <span class="eyebrow center" style="display:block">Todo lo que necesitas</span>
+    <h2 class="section-title center">¿Qué incluye tu inscripción?</h2>
+
+    <div class="grid cols-3">
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M6 2h9l3 3v17H6V2Z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div>
+        <h4>Manual del curso</h4>
+        <p class="section-sub">Material propio, claro y ordenado, para consultar cuando quieras.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="14" height="11" rx="2"/><path d="M17 9l4-2v10l-4-2"/></svg></div>
+        <h4>Clases en vivo por Zoom</h4>
+        <p class="section-sub">Sesiones guiadas donde podrás ver, escuchar y preguntar en tiempo real.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M9 12h6M9 16h6"/></svg></div>
+        <h4>Explicaciones paso a paso</h4>
+        <p class="section-sub">Cada tema se desglosa con calma, pensado para quien empieza desde cero.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg></div>
+        <h4>Ejercicios prácticos</h4>
+        <p class="section-sub">Actividades para aplicar lo aprendido con tu propia carta numerológica.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 3l9 4-9 4-9-4 9-4Z"/><path d="M3 11l9 4 9-4M3 15l9 4 9-4"/></svg></div>
+        <h4>Material descargable</h4>
+        <p class="section-sub">Recursos extra para reforzar y repasar a tu propio ritmo.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="M17 4l1.5 1.5L21 3"/></svg></div>
+        <h4>Acceso pensado para principiantes</h4>
+        <p class="section-sub">No necesitas experiencia previa ni conocimientos técnicos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== BENEFICIOS EMOCIONALES =============== -->
+<section class="section-deep" id="beneficios">
+  <div class="wrap">
+    <span class="eyebrow center" style="display:block">Lo que te vas a llevar</span>
+    <h2 class="section-title center">Más que una técnica, un cambio de mirada</h2>
+
+    <div class="grid cols-3">
+      <div class="card reveal" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); box-shadow:none;">
+        <h4 style="color:#fff">✨ Comprender quién eres</h4>
+        <p style="color:rgba(237,230,247,0.75)">Con más claridad y menos juicio hacia ti misma.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); box-shadow:none;">
+        <h4 style="color:#fff">✨ Tomar mejores decisiones</h4>
+        <p style="color:rgba(237,230,247,0.75)">Con información que resuena con tu propia esencia.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); box-shadow:none;">
+        <h4 style="color:#fff">✨ Entender tus relaciones</h4>
+        <p style="color:rgba(237,230,247,0.75)">Ver con otros ojos por qué conectas de ciertas formas.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); box-shadow:none;">
+        <h4 style="color:#fff">✨ Descubrir tu propósito</h4>
+        <p style="color:rgba(237,230,247,0.75)">Una brújula para tus próximos pasos.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); box-shadow:none;">
+        <h4 style="color:#fff">✨ Incrementar tu confianza</h4>
+        <p style="color:rgba(237,230,247,0.75)">Al reconocer tus fortalezas desde otro lugar.</p>
+      </div>
+      <div class="card reveal" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.1); box-shadow:none;">
+        <h4 style="color:#fff">✨ Encontrar claridad</h4>
+        <p style="color:rgba(237,230,247,0.75)">En momentos donde todo parecía confuso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== INSTRUCTORA =============== -->
+<section id="instructora">
+  <div class="wrap instructor">
+    <div class="instructor-visual reveal">
+      <span class="initial">Ly</span>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Tu guía en este camino</span>
+      <h2 class="section-title">Ly Badillo</h2>
+      <p class="section-sub" style="max-width:520px">Numeróloga y terapeuta del dolor, acompaña procesos de autoconocimiento desde hace años combinando distintas herramientas energéticas con calidez y cercanía. Su forma de enseñar está pensada para que cualquier persona, sin experiencia previa, pueda comprender y aplicar la numerología en su vida diaria.</p>
+      <div class="credentials">
+        <span>Numeróloga</span>
+        <span>Terapeuta del Dolor</span>
+        <span>Puntos de Luz</span>
+        <span>Reiki</span>
+        <span>Terapia Energética</span>
+        <span>Flores de Bach</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== TESTIMONIOS =============== -->
+<section class="section-alt" id="testimonios">
+  <div class="wrap">
+    <span class="eyebrow center" style="display:block">Voces del camino</span>
+    <h2 class="section-title center">Experiencias de nuestras alumnas (ejemplos de formato)</h2>
+    <p class="section-sub center">Las siguientes tarjetas son ejemplos de diseño y formato. Serán reemplazadas por testimonios reales de alumnas.</p>
+    <p class="testi-note center" style="max-width:640px">⚠️ Contenido de muestra — estas tarjetas no representan personas reales. Sustitúyelas por testimonios verídicos antes de publicar.</p>
+
+    <div class="grid cols-3" id="testi-grid">
+      <!-- Las 12 tarjetas se generan también reforzadas en HTML por si JS no corre -->
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">A</div><div><div class="testi-name">Alumna de muestra 1</div><div class="testi-meta">34 años · Puebla</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">B</div><div><div class="testi-name">Alumna de muestra 2</div><div class="testi-meta">41 años · CDMX</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">C</div><div><div class="testi-name">Alumna de muestra 3</div><div class="testi-meta">57 años · Jalisco</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">D</div><div><div class="testi-name">Alumna de muestra 4</div><div class="testi-meta">29 años · Veracruz</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">E</div><div><div class="testi-name">Alumna de muestra 5</div><div class="testi-meta">46 años · Nuevo León</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">F</div><div><div class="testi-name">Alumna de muestra 6</div><div class="testi-meta">62 años · Oaxaca</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">G</div><div><div class="testi-name">Alumna de muestra 7</div><div class="testi-meta">38 años · Guanajuato</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">H</div><div><div class="testi-name">Alumna de muestra 8</div><div class="testi-meta">50 años · Yucatán</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">I</div><div><div class="testi-name">Alumna de muestra 9</div><div class="testi-meta">33 años · Querétaro</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">J</div><div><div class="testi-name">Alumna de muestra 10</div><div class="testi-meta">65 años · Chihuahua</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">K</div><div><div class="testi-name">Alumna de muestra 11</div><div class="testi-meta">44 años · Sonora</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+      <div class="testi-card reveal"><span class="testi-tag">Demo</span><div class="testi-top"><div class="avatar">L</div><div><div class="testi-name">Alumna de muestra 12</div><div class="testi-meta">31 años · Michoacán</div></div></div><p class="testi-quote">"Aquí irá un testimonio real sobre su experiencia con el curso."</p><div class="stars">★★★★★</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== OFERTA =============== -->
+<section id="oferta">
+  <div class="wrap">
+    <span class="eyebrow center" style="display:block">Tu lugar te espera</span>
+    <h2 class="section-title center">Comienza tu camino en la numerología</h2>
+    <p class="section-sub center">Cupo limitado por grupo para garantizar acompañamiento cercano.</p>
+
+    <div class="pricing reveal">
+      <span class="eyebrow">Inversión</span>
+      <div class="price"><sup>$</sup>444 <sup>MXN</sup></div>
+      <p class="section-sub center">Pago único · Curso para principiantes</p>
+      <ul>
+        <li>Modalidad 100% por Zoom, en vivo</li>
+        <li>Manual del curso incluido</li>
+        <li>Explicaciones paso a paso, sin tecnicismos</li>
+        <li>Ejercicios prácticos y material descargable</li>
+        <li>Ideal si nunca has estudiado numerología</li>
+      </ul>
+      <a href="https://wa.me/522218482898?text=Hola%20Ly%2C%20quiero%20inscribirme%20al%20Curso%20de%20Numerolog%C3%ADa" target="_blank" rel="noopener" class="btn btn-primary">Quiero Inscribirme</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============== FAQ =============== -->
+<section class="section-alt" id="faq">
+  <div class="wrap" style="max-width:760px">
+    <span class="eyebrow center" style="display:block">Antes de empezar</span>
+    <h2 class="section-title center">Preguntas frecuentes</h2>
+
+    <div class="faq-list" style="margin-top:2.4rem">
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Necesito conocimientos previos? <span class="plus">+</span></button>
+        <div class="faq-a"><p>No. El curso está diseñado especialmente para principiantes, explicando cada concepto desde cero y a un ritmo cómodo.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Cómo recibo el manual? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Una vez confirmada tu inscripción, se te hace llegar el manual del curso como parte de tu material de estudio.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Cómo son las clases? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Las clases son en vivo por Zoom, con explicaciones paso a paso y espacio para practicar junto con Ly.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Puedo preguntar durante la clase? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Sí, las sesiones son en vivo precisamente para resolver tus dudas en el momento.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">¿Cómo pago? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Escríbenos por WhatsApp para confirmar tu lugar y recibir las opciones de pago disponibles.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== CIERRE EMOCIONAL =============== -->
+<section class="closing">
+  <blockquote class="reveal">"Los números son el mapa... tú eliges el camino."</blockquote>
+  <a href="#oferta" class="btn btn-gold reveal">Reservar Mi Lugar</a>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer>
+  <div class="brand">Ly Badillo</div>
+  <div class="roles">
+    <span>Numeróloga</span><span>Terapeuta del Dolor</span><span>Puntos de Luz</span><span>Reiki</span><span>Terapia Energética</span><span>Flores de Bach</span>
+  </div>
+  <a href="https://wa.me/522218482898" target="_blank" rel="noopener" class="btn btn-wsp">Enviar WhatsApp</a>
+  <p class="fine">© <span id="year"></span> Ly Badillo — Curso de Numerología para Principiantes. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+/* ============================================================
+   JS ligero — sin dependencias externas
+   ============================================================ */
+(function(){
+  "use strict";
+
+  // Año dinámico en footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // --- Top bar visible al hacer scroll ---
+  var topbar = document.getElementById('topbar');
+  var lastY = 0;
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    if (y > 260) { topbar.classList.add('show'); } else { topbar.classList.remove('show'); }
+    lastY = y;
+  }, { passive:true });
+
+  // --- Scroll reveal con IntersectionObserver ---
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('visible'); });
+  }
+
+  // --- FAQ acordeón ---
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var ans = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      // cerrar todos
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // --- Mandala numerológico: genera los números 1–9 en círculo ---
+  var mandala = document.getElementById('mandala');
+  if (mandala) {
+    var total = 9;
+    for (var i = 0; i < total; i++) {
+      var angle = (360 / total) * i;
+      var num = document.createElement('div');
+      num.className = 'num';
+      num.style.setProperty('--a', angle + 'deg');
+      num.textContent = i + 1;
+      num.style.left = '50%';
+      num.style.top = '50%';
+      num.style.transform =
+        'translate(-50%,-50%) rotate(' + angle + 'deg) translate(150px) rotate(-' + angle + 'deg)';
+      mandala.appendChild(num);
+    }
+  }
+})();
+</script>
+</body>
+</html>
